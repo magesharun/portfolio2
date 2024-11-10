@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Section</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Light mode background */
+  color: #333; /* Light mode text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333; /* Dark mode background */
+  color:   
+ #fff; /* Dark mode text color */
+}
+  </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Light/Dark Mode</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <button id="mode-toggle">Toggle Mode</button>
+    
+      <div class="content">
+        </div>
+    
+      <script >
+        const modeToggle = document.getElementById('mode-toggle');
+         const body = document.body;
+
+        modeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');   
+
+});
+      </script>
+    </body>
+    </html>
+</body>
+</html>

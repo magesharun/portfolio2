@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        /* General Layout */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background-color: #f4f4f4;
+        }
+        .contact-form {
+          width: 70%;
+          max-width: 800px;
+          background-color: #fff;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          overflow: hidden;
+          padding: 20px;
+        }
+        .contact-form .form-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        /* Form Styling */
+        .contact-form input[type="text"], 
+        .contact-form textarea {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+        .contact-form textarea {
+          height: 120px;
+        }
+        .contact-form button {
+          width: 100%;
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 12px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+          background-color: #45a049;
+        }
+
+        /* Contact Details and Social Icons */
+        .contact-details, .social-icons {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          text-align: center;
+        }
+        .contact-details i, .social-icons i {
+          font-size: 24px;
+          color: #333;
+          margin-right: 8px;
+        }
+        .contact-details p, .social-icons i {
+          margin: 0;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-top: 20px;
+        }
+        .social-icons i {
+          cursor: pointer;
+          transition: color 0.3s;
+        }
+        .social-icons i:hover {
+          color: #4CAF50;
+        }
+        .copyright {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 14px;
+          color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form">
+    <div class="form-section">
+        <!-- Left Form Section -->
+        <div id="left-form" style="flex: 1;">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <textarea placeholder="Write something..."></textarea>
+            <button>Submit</button>
+        </div>
+        
+        <!-- Right Form Section -->
+        <div id="right-form" style="flex: 1;">
+            <div class="contact-details">
+                <div><i class='bx bx-location-plus'></i><p>City, State</p></div>
+                <div><i class='bx bx-phone-call'></i><p>+123 456 7890</p></div>
+                <div><i class='bx bxl-gmail'></i><p>email@example.com</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <!-- Social Icons Section -->
+    <div class="social-icons">
+        <i class='bx bxl-github'></i>
+        <i class='bx bxl-telegram'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-whatsapp'></i>
+    </div>
+    
+    <!-- Copyright -->
+    <p class="copyright">© Magesh Arun. All rights reserved.</p>
+</div>
+
+</body>
+</html>
